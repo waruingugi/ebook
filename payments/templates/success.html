@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card bg-light" style="border-radius: 8px;">
+                        <div class="card-body py-5">
+                            <h2 class="card-title headline text-center">All done! Check your {{ email }} inbox for an email that I've sent you</h2>
+                            <form><a class="btn btn-danger btn-block btn-lg my-4" role="button" href="#payment">&lt;&lt; Go Back</a></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

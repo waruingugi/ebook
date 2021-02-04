@@ -1,0 +1,23 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.headline {
+  color: #1c1e2e;
+  font-family: Quicksand, sans-serif;
+}
+
+#book_cover {
+  height: auto;
+  max-width: 100%;
+}
+
+.btn.btn-danger.btn-block.btn-lg {
+  color: #fff;
+  /*border-radius: 5px;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

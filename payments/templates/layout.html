@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belleza">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
+    <script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'assets/css/Team-Clean.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/Testimonials.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/styles.css' %}" />
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'assets/img/favicon.ico' %}" type="image/x-icon">    
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="">
+    <meta name="description" content="">
+
+</head>
+
+<body>
+
+    {% block content %}
+    <!-- body content -->
+    {% endblock %}
+
+    {% block scripts %}
+        
+    {% endblock %}
+
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.js' %}"></script>
+    <script src="{% static 'assets/js/bs-init.js' %}"></script>
+        
+
+</body>
+</html>
