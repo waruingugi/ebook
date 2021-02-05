@@ -111,8 +111,13 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                        <form>
-                            <div class="form-group text-center"><input class="form-control form-control-lg" type="text" required="" name="transaction" placeholder="PAV07V50F13"><button class="btn btn-danger btn-block btn-lg my-3" type="submit">&gt;&gt; I HAVE PAID &lt;&lt;</button></div>
+                        <form role="form" action="{% url 'index' %}" method="POST" autocomplete="on">
+                            {% csrf_token %}
+                            <p class="text-danger text-left">{{form.transaction_code.errors.as_text }}</p>
+                            <div class="form-group text-center">
+                                <input class="form-control form-control-lg" type="text" required="" name="transaction_code" placeholder="PAV07V50F13">
+                                <button class="btn btn-danger btn-block btn-lg my-3" type="submit">&gt;&gt; I HAVE PAID &lt;&lt;</button>
+                            </div>
                         </form>
                     </div>
                 </div>
